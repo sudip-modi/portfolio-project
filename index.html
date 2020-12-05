@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio website</title>
+    <title>Sudip Modi</title>
     <meta name="description" content="">
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -33,11 +33,11 @@
         <!-- ul-list  -->
 
          <ul class="menu">
-           <li><a href="#home">Home</a></li>
-           <li><a href="#skills">Skills</a></li>
-           <li><a href="#certificates">Certificates</a></li>
-           <li><a href="#">InstaFeed</a></li>
-           <li><a href="#contact">Contact</a></li>
+           <li><a href="#home" class="menuhome">Home</a></li>
+           <li><a href="#skills" class="menuskills">Skills</a></li>
+           <li><a href="#certificates" class="menucertificates">Certificates</a></li>
+           <li><a href="#" class="menuinstafeed">InstaFeed</a></li>
+           <li><a href="#contact" class="menucontact">Contact</a></li>
          </ul>
          
         </nav>
@@ -45,9 +45,9 @@
         <!-- content -->
 
         <div class="content">
+           
 
-		
-	  <div class="langwrap">
+          <div class="langwrap">
             <a href="#" language='english' class="active language-button" id="language-button-english">English</a>
             <a href="#" language='hindi' class="language-button" id="language-button-hindi">हिन्दी</a>
           </div>
@@ -57,16 +57,20 @@
           </div>
 
           <div class="text">
-            <h1>Hello, I am Sudip</h1>
-            <p>Hey i am a Frontend Developer based in Haldia</p>
+            <h1 class="textname">Hello, I am Sudip</h1>
+            <p class="description">Hey i am a Frontend Developer based in Haldia</p>
             
             <!-- portfolio button -->
 
-            <a href="#" class="portfolio-button">My portfolio</a>
+            <a href="#" class="myportfolio">My portfolio</a>
 
           </div>
 
-        </div>        
+         
+
+        </div>    
+        
+        
 
     </section>
 
@@ -81,7 +85,7 @@
       <!--heading-->
 
       <div class="skill-heading">
-         <h2>My Expertise</h2>
+         <h2 class="expertise">My Expertise</h2>
       </div>
       <!--skill-box-container----------->
 
@@ -100,8 +104,8 @@
               <!--skill-box-text--------->
      
               <div class="s-box-text">
-                <strong>Hyper Text Markup Language(HTML5)</strong>
-                <p>I have 1 year experience in HTML5 and i have created many projects.</p>
+                <strong class="htmlstrong">Hyper Text Markup Language(HTML5)</strong>
+                <p class="htmlexperience">I have 1 year experience in HTML5 and i have created many projects.</p>
               </div>
      
              </div>
@@ -118,8 +122,8 @@
                  <!--skill-box-text--------->
 
                  <div class="s-box-text">
-                    <strong>Cascading Style Sheets(CSS3)</strong>
-                    <p>I have 1 year experience in CSS3 and i have completed many CSS projects.</p>
+                    <strong class="cssstrong">Cascading Style Sheets(CSS3)</strong>
+                    <p class="cssexperience">I have 1 year experience in CSS3 and i have completed many CSS projects.</p>
                  </div>
 
               </div>
@@ -137,8 +141,8 @@
                <!--skill-box-text--------->
      
               <div class="s-box-text">
-                <strong>JavaScript(ES6)</strong>
-                <p>I have 1 year experience in JavaScript and i have completed 5 Js projects.</p>
+                <strong class="javascriptstrong">JavaScript(ES6)</strong>
+                <p class="javascriptexperience">I have 1 year experience in JavaScript and i have completed 5 Js projects.</p>
               </div>
    
             </div>        
@@ -163,12 +167,7 @@
     </section>
     
 
-
-
-
-
-
-      <!--contact------------------------->
+      <!--Contact section------------------------->
 
 	      <section id="contact">
 
@@ -178,13 +177,13 @@
 
           <!--heading---------------->
 
-          <h3>Connect with me.</h3>
+          <h3 class="connectheading">Connect with me.</h3>
 
           <!--input----------------->
 
           <div class="contact-input">
             <input type="email" placeholder="Example@gmail.com"/>
-            <a href="#">Continue</a>
+            <a href="#" class="continuebutton">Continue</a>
           </div>
 
         </section>
@@ -201,12 +200,128 @@
              </div>
 
              <div class="copyright">
-             <p>PORTFOLIO</p>
-             <p>©COPYRIGHT 2020 SUDIP MODI</p>
+             <p class="footerportfolio">PORTFOLIO</p>
+             <p class="footercopyright">©COPYRIGHT 2020 SUDIP MODI</p>
              </div>
 
           </footer>
     
-    <script src="" async defer></script>
+
+
+            
+  
+    
+
+        <script>
+
+
+          const langelement = document.querySelector('.langwrap');
+          const link = document.querySelectorAll('a');
+
+          const textName = document.querySelector('.textname');
+          const Description = document.querySelector('.description');
+          const footerPortfolio = document.querySelector('.footerportfolio');
+          const footerCopyright = document.querySelector('.footercopyright');
+          const continueButton = document.querySelector('.continuebutton');
+          const connectHeading = document.querySelector('.connectheading');
+          const htmlStrong = document.querySelector('.htmlstrong');
+          const htmlExperience = document.querySelector('.htmlexperience');
+          const cssStrong = document.querySelector('.cssstrong');
+          const cssExperience = document.querySelector('.cssexperience');
+          const javascriptStrong = document.querySelector('.javascriptstrong');
+          const javascriptExperience = document.querySelector('.javascriptexperience');
+          const Expertise = document.querySelector('.expertise');
+          const myPortfolio = document.querySelector('.myportfolio');
+          const menuHome = document.querySelector('.menuhome');
+          const menuSkills = document.querySelector('.menuskills');
+          const menuCertificates = document.querySelector('.menucertificates');
+          const menuInstafeed = document.querySelector('.menuinstafeed');
+          const menuContact = document.querySelector('.menucontact');
+          
+          
+
+
+
+          link.forEach(el =>{
+              el.addEventListener('click', () => {
+                  langelement.querySelector('.active').classList.remove('active');
+                  el.classList.add('active');
+
+                  const attr = el.getAttribute('language');
+                  
+                  textName.textContent = data[attr].textname;
+                  Description.textContent = data[attr].description;
+                  footerPortfolio.textContent = data[attr].footerportfolio;
+                  footerCopyright.textContent = data[attr].footercopyright;
+                  continueButton.textContent = data[attr].continuebutton;
+                  connectHeading.textContent = data[attr].connectheading;
+                  htmlStrong.textContent = data[attr].htmlstrong;
+                  htmlExperience.textContent = data[attr].htmlexperience;
+                  cssStrong.textContent = data[attr].cssstrong;
+                  cssExperience.textContent = data[attr].cssexperience;
+                  javascriptStrong.textContent = data[attr].javascriptstrong;
+                  javascriptExperience.textContent = data[attr].javascriptexperience;
+                  Expertise.textContent = data[attr].expertise;
+                  myPortfolio.textContent = data[attr].myportfolio;
+                  menuHome.textContent = data[attr].menuhome;
+                  menuSkills.textContent = data[attr].menuskills;
+                  menuCertificates.textContent = data[attr].menucertificates;
+                  menuInstafeed.textContent = data[attr].menuinstafeed;
+                  menuContact.textContent = data[attr].menucontact;
+                  
+                  
+
+
+              })
+          });
+
+      var data = {
+                    "english":
+                    {   "footerportfolio": "PORTFOLIO",
+                        "footercopyright": "© COPYRIGHT SUDIP MODI 2020",
+                        "continuebutton": "Continue",
+                        "connectheading": "Connect with me",
+                        "javascriptexperience": "I have 1 year experience in javascript an i have completed 5 projects.",
+                        "javascriptstrong": "Javascript(ES6)",
+                        "expertise": "My Expertise",
+                        "textname": "Hello, I am Sudip",
+                        "description": " Hey i am a Frontend Developer based in haldia",
+                        "htmlstrong": "Hyper Text Markup Language(HTML5)",
+                        "htmlexperience": "I have 1 year experience in HTML5 and i have created many projects.",
+                        "cssstrong": "Cascading Style Sheets(CSS3)",
+                        "cssexperience": "I have 1 year experience in CSS3 and i have completed many CSS projects.",
+                        "myportfolio": "My Portfolio",
+                        "menuhome": "HOME",
+                        "menuskills": "SKILLS",
+                        "menucertificates": "INSTAFEED",
+                        "menucontact": "CONTACT"
+                    },
+                
+                    "hindi": 
+                    {
+                       
+                        "footerportfolio": "पोर्टफोलियो",
+                        "footercopyright": "© कॉपीराइट सुदीप मोदि 2020",
+                        "continuebutton": "आगे बढ़ो",
+                        "connectheading": "मुझसे जुड़े",
+                        "javascriptexperience": "मुझे जावास्क्रिप्ट में 1 वर्ष का अनुभव है और मैंने 5 जेएस परियोजनाएं पूरी की हैं।",
+                        "javascriptstrong": "जावास्क्रिप्ट(ES6)",
+                        "expertise": "मेरी विशेषज्ञता",
+                        "textname": "नमस्ते, मैं सुदीप हूं।",
+                        "description": "मैं एक फ्रंटेंड डेवलपर हूं, जो हलदिया में स्थित है।",
+                        "htmlstrong": "हाइपर टेक्स्ट मार्कअप लैंग्वेज (HTML5)",
+                        "htmlexperience": "मुझे एचटीएमएल 5 में 1 साल का अनुभव है और मैंने कई प्रोजेक्ट बनाए हैं।",
+                        "cssstrong": "कैस्केडिंग स्टाइल शीट्स (CSS3)",
+                        "cssexperience": "मुझे CSS3 में 1 वर्ष का अनुभव है और मैंने कई सीएसएस परियोजनाएं पूरी की हैं।",
+                        "myportfolio": "मेरा पोर्टफोलियो",
+                        "menuhome": "घर",
+                        "menuskills": "कौशल",
+                        "menucertificates": "इंस्टा",
+                        "menucontact": "संपर्क"
+                    }
+                 }
+      </script>
+
+  
   </body>
 </html>
