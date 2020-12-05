@@ -135,6 +135,25 @@ nav ul li a:hover{
 }
 
 
+.language-button{
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #209cee;;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+    margin: 1rem auto;
+}
+
+.language-button:hover{
+    background-color: #07087e;
+    transition: all ease 0.2s;
+}
+
+
 /* skills section */
 
 
@@ -500,7 +519,16 @@ nav .menu-btn,
 	.facelogo{
 		display:none;
     }
-    
+  
+	    #language-button-english{
+          margin-top: 400px;
+          
+    }
+
+    .language-button{
+        margin-right: 273px;
+    }
+	
 	.text{
 		width:70%;
 		position:absolute;
@@ -509,6 +537,7 @@ nav .menu-btn,
 		transform:translate(-50%,-50%);
 		
 	}
+	
 	#contact img{
 		height:200px;
     }
@@ -523,10 +552,15 @@ nav .menu-btn,
     }
  
 }
+
 @media(max-width:530px){
 	.contact-input{
 		width:90%;
 	}
+	
+	   .language-button{
+        margin-right: 150px;
+    }
 	.skill-img{
 		display:none;
     }
@@ -543,9 +577,11 @@ nav .menu-btn,
         width: 300px;
         object-fit: contain;
       }
+	
 	#skills{
 		margin:0px;
     }
+	
     .s-box-text{
         text-align: center;
     }
