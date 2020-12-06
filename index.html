@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token.js?userSecret=smausvh3hif7r07hatk0c"></script>
   </head>
   <body>
     
@@ -191,7 +192,7 @@
 
           <div class="contact-input">
             <input type="email" placeholder="Example@gmail.com"/>
-            <a href="#" class="continuebutton">Continue</a>
+            <a href="#" class="continuebutton" href="mailto:sudip5297@rediffmail.com">Continue</a>
           </div>
 
         </section>
@@ -217,26 +218,6 @@
        
 
             
-          
-    
-        
-
-          
-          <script src="scripts/instafeed.min.js"></script>
-
-          <script type="text/javascript">
-            fetch('https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token.js?userSecret=smausvh3hif7r07hatk0c')
-          .then(resp => resp.json())
-          .then(data => {
-                var feed = new Instafeed({
-                    accessToken: data.Token,
-                    limit: 12,
-                    template: '<a href="{{link}}"><img class="image__img  pulse1" title="{{caption}}" src="{{image}}" /><div class="image__overlay"><div class="image__title">{{caption}}</div></div></a>',
-                });
-                feed.run();
-            });
-
-          </script>
 
         <script>
 
@@ -348,7 +329,25 @@
                         "menucontact": "संपर्क"
                     }
                  }
-      </script>
+        </script>
+
+
+        <script src="scripts/instafeed.min.js"></script>
+        <!-- <script src="https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token.js?userSecret=smausvh3hif7r07hatk0c"></script>  -->
+        
+        <script type="text/javascript">
+          fetch('https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token?userSecret=smausvh3hif7r07hatk0c')
+        .then(resp => resp.json())
+        .then(data => {
+              var feed = new Instafeed({
+                  accessToken: data.Token,
+                  limit: 6,
+                  template: '<a href="{{link}}"><img class="image__img  pulse1" title="{{caption}}" src="{{image}}" /><div class="image__overlay"><div class="image__title">{{caption}}</div></div></a>',
+              });
+              feed.run();
+          });
+        
+        </script>
 
   
   </body>
