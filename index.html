@@ -337,6 +337,10 @@
         
         <script type="text/javascript">
           fetch('https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token?userSecret=smausvh3hif7r07hatk0c')
+		  headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
         .then(resp => resp.json())
         .then(data => {
               var feed = new Instafeed({
