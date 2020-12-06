@@ -174,6 +174,9 @@
            
     
     <section id="instagramfeed">
+
+      <div class="horizontal-rule1"></div>
+
       <div class="instafeed-container-box">
         <div class="instafeed-text">
           <h1 style="">My instagram feed</h1>
@@ -184,6 +187,8 @@
           </div>
         </div>
       </div>   
+
+      <div class="horizontal-rule2"></div>
     </section>
 
       <!--Contact section------------------------->
@@ -230,7 +235,17 @@
        
 
             
-
+        
+          <script>
+            document.getElementById('language-button-english').onclick = function(){
+            this.style.backgroundColor = '#07087e';
+            document.getElementById('language-button-hindi').style.backgroundColor = '#209CEE';
+            };
+            document.getElementById('language-button-hindi').onclick = function(){
+            this.style.backgroundColor = '#07087e';
+            document.getElementById('language-button-english').style.backgroundColor = '#209CEE';
+            };
+          </script>
         <script>
 
 
@@ -345,6 +360,7 @@
 
 
         <script src="scripts/instafeed.min.js"></script>
+        <!-- <script src="https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token.js?userSecret=smausvh3hif7r07hatk0c"></script>  -->
         
         <script type="text/javascript">
           fetch('https://ig.instant-tokens.com/users/070b28d2-e52c-4c5a-81b2-acb1709c2e79/instagram/17841436364635144/token?userSecret=smausvh3hif7r07hatk0c')
